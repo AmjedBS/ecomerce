@@ -5,8 +5,7 @@ export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/shopping" replace />} />
-        <Route path="/shopping" element={<Shopping />} />
+        <Route path="/" element={<Shopping />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<Navigate to="/shopping" replace />} />
       </Routes>
